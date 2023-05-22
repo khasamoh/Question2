@@ -20,6 +20,7 @@
             if (start > end || start < 1 || end > data.length) {
                 msg.textContent = "Invalid range, valid range: 1-" + data.length;
                 table.innerHTML = "";
+                return;
             }
 
             msg.textContent = "Valid Range: 1-" + data.length;
